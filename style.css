@@ -1,7 +1,7 @@
-/* Importação das fontes personalizadas do Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
 
-/* Variáveis de cor e fonte para facilitar personalizações */
+
 :root {
     --primary-color: #026773;
     --secondary-color: #3CA6A6;
@@ -12,7 +12,7 @@
     --font-titulo: "Rakkas", serif;
 }
 
-/* Reset básico e fonte padrão */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@
     font-family: var(--font-body);
 }
 
-/* Corpo da página */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -32,7 +31,7 @@ body {
     padding: 20px;
 }
 
-/* Títulos */
+
 h1, h2, h3 {
     font-family: var(--font-titulo);
 }
@@ -41,12 +40,12 @@ h3 {
     margin-top: 25px;
 }
 
-/* Parágrafos e listas */
+
 p, ul {
     margin-top: 20px;
 }
 
-/* Imagens responsivas */
+
 img {
     max-width: 90%;
     height: auto;
@@ -54,7 +53,7 @@ img {
     margin: 15px 0;
 }
 
-/* Cabeçalho */
+
 header {
     width: 100%;
     max-width: 800px;
@@ -66,7 +65,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navegação */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -88,13 +87,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Conteúdo principal */
 main {
     max-width: 800px;
     width: 100%;
 }
 
-/* Seções de conteúdo */
+
 .conteudo {
     background-color: white;
     padding: 20px;
@@ -104,7 +102,7 @@ main {
     text-align: left;
 }
 
-/* Botão de ação */
+
 .cta-button {
     display: inline-block;
     margin-top: 20px;
@@ -120,14 +118,14 @@ main {
     background-color: var(--button-hover);
 }
 
-/* Rodapé */
+
 footer {
     text-align: center;
     padding: 20px;
     color: var(--text-color);
 }
 
-/* Estilos responsivos para telas pequenas */
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
