@@ -1,12 +1,23 @@
+/* Importação das fontes personalizadas do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
 
+/* Estilos responsivos para telas pequenas (celulares) */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe, img {
+        width: 100%;
+    }
 }
 
-/* Variáveis */
+/* Variáveis de cor e fonte para facilitar personalizações */
 :root {
     --primary-color: #026773;
     --secondary-color: #3CA6A6;
@@ -17,6 +28,7 @@
     --font-titulo: "Rakkas", serif;
 }
 
+/* Reset e fonte padrão */
 * {
     margin: 0;
     padding: 0;
@@ -24,21 +36,104 @@
     font-family: var(--font-body);
 }
 
-/* Corpo da página */
+/* Corpo da página com centralização e cor de fundo */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Estilo para títulos principais */
+h1, h2, h3 {
+    font-family: var(--font-titulo);
+}
+
+/* Títulos menores com margem */
 h3 {
     margin-top: 25px;
 }
 
+/* Parágrafos com espaçamento */
 p {
     margin-top: 20px;
 }
 
+/* Imagens responsivas */
 img {
     max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
 }
+
+/* Container principal do conteúdo */
+main {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Cabeçalho centralizado */
+header {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de navegação estilizado */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--button-hover);
+    text-decoration: underline;
+}
+
+/* Seções de conteúdo com caixa visual */
+.conteudo {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
